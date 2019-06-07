@@ -1,0 +1,87 @@
+Features of MQ-3 Alcohol Sensor:
+
+Sensor Type - Semiconductor
+Easy SIP header interface
+Compatible with most of the microcontrollers
+Low-power standby mode
+Requires heater voltage
+Good sensitivity to alcohol gas
+Fast response and High sensitivity  
+Long life and low cost
+Requires simple Drive circuit
+
+Specifications of MQ-3 Gas Sensor:
+
+Power requirements: 5 VDC @ ~165 mA (heater on) / ~60 mA (heater off)
+Current Consumption: 150mA
+DO output: TTL digital 0 and 1 ( 0.1 and 5V)
+AO output: 0.1- 0.3 V (relative to pollution), the maximum concentration of a voltage of about 4V
+Detecting Concentration: 0.05-10mg/L Alcohol
+Interface: 1 TTL compatible input (HSW), 1 TTL compatible output (ALR)
+Heater consumption: less than 750mW
+Operating temperature: 14 to 122 °F (-10 to 50°C)
+Load resistance: 200kO
+Sensitivity S: Rs(in air)/Rs(0.4mg/L Alcohol)=5
+Sensing Resistance Rs: 2K?-20K?(in 0.4mg/l alcohol)
+Dimensions: 32 x 22 x 16 mm
+
+Applications of MQ-3 Gas Sensor:
+
+Gas level over-limit alarm
+Breathalyser
+Portable alcohol detector
+Stand-alone/background sensing device
+Environmental monitoring equipment
+
+Pin Description
+For MQ-3 Sensor Module
+
+Pin Name                                            Description
+
+VCC                          This pin powers the module, typically the operating voltage is +5V
+
+GND                         Used to connect the module to system ground
+
+Digital Out (DO)     You can also use this sensor to get digital output from this pin, by setting a threshold value using the potentiometer
+
+Analog Out (AO)     This pin outputs 0-5V analog voltage based on the intensity of the gas
+ 
+Hardware Overview:
+This is an Analog output sensor. This needs to be connected to any one Analog socket in Grove Base Shield. The examples used in this tutorial makes uses of A0 analog pin. Connect this module to the A0 port of Base Shield.
+
+It is possible to connect the Grove module to Arduino directly by using jumper wires by using the connection as shown in the table below:
+
+Arduino	Gas Sensor
+5V	VCC
+GND	GND
+NC	NC
+Analog A0	SIG
+The output voltage from the Gas sensor increases when the concentration of gas increases. Sensitivity can be adjusted by varying the potentiometer. Please note that the best preheat time for the sensor is above 24 hours. For detailed information about the MQ-3 sensor, please refer to the data-sheet provided in Resources section.
+
+Overview:
+This alcohol gas sensor detects the concentration of alcohol gas in the air and ouputs its reading as an analog voltage. The concentration sensing range of 0.04 mg/L to 4 mg/L is suitable for breathalysers (the legal limit of breath alcohol concentration, or BrAC, in most US states is 0.08 grams per 210 liters, or 0.38 mg/L). The sensor can operate at temperatures from -10 to 50°C and consumes less than 150 mA at 5 V. Please read the MQ3 datasheet (153k pdf) for more information about the sensor.
+
+
+Gas sensor with orange plastic case bottom view.
+
+Connections:
+Connecting five volts across the heating (H) pins keeps the sensor hot enough to function correctly. Connecting five volts at either the A or B pins causes the sensor to emit an analog voltage on the other pins. A resistive load between the output pins and ground sets the sensitivity of the detector. Please note that the picture in the datasheet for the top configuration is wrong. Both configurations have the same pinout consistent with the bottom configuration. The resistive load should be calibrated for your particular application using the equations in the datasheet, but a good starting value for the resistor is 200 kO.
+
+We offer two breakout boards that make it easier to interface with these sensors: a Pololu carrier board and a SparkFun carrier board. The Pololu version is shown below.
+
+
+ADVANTAGES
+1. To prevent accident due to drunk and driving.
+2. Easy and efficient to test the alcohol content in the body.
+3. Quick and accurate results.
+4. Helpful for police and provides and automatic safety
+systems for cars and other vehicles as well.
+
+Character configuration:
+1. Good sensitivity to alcohol gas.
+2. Circuit is simply driven.
+3. Low cost and long life.
+4. Small towards benzene and High sensitivity to
+alcohol .
+5. Fast response and high sensitivity and stability and
+long life.
